@@ -1,9 +1,5 @@
 import sys, os, struct, subprocess, string
 
-devkitppc = os.environ.get("DEVKITPPC")
-path_cc = os.path.join(devkitppc, "bin", "powerpc-eabi-gcc")
-path_objcopy = os.path.join(devkitppc, "bin", "powerpc-eabi-objcopy")
-
 game_base = open(sys.argv[1], "rb").read()
 game_base = bytearray(game_base)
 
